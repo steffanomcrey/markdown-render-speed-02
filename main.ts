@@ -1,7 +1,7 @@
 // Driver for the markdown-render-speed-02 harness.
-// Reads /input/cases.json (or $MAKEFUN_INPUT_DIR/cases.json) and writes
-// /output/html.json (or $MAKEFUN_OUTPUT_DIR/html.json): one rendered HTML
-// string per case, in input order, byte-identical to marked 18.1.3 output.
+// Reads cases from /input/cases.json (or $MAKEFUN_INPUT_DIR) and writes the
+// rendered HTML strings to /output/html.json (or $MAKEFUN_OUTPUT_DIR),
+// one per case, in input order.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse } from './parse.js';
