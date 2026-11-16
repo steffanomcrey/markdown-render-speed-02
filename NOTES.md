@@ -53,3 +53,17 @@ own rules.
 - `node diff.mjs 0` re-run in the finish session against the submitted
   `repo/parse.js`: **720/720 pass, 0 fail, 1023 ms wall (1.421 ms/case)**.
   No parser change was needed; the code submitted is the validated code.
+
+## Final validation, retry finish session (2026-11-16 16:41 WIB)
+
+- `node diff.mjs 0` re-run in this retry session against the restored
+  git HEAD `repo/parse.js` (commit 8b9689c, 1359 lines): **720/720 pass,
+  0 fail, 3044 ms wall (4.228 ms/case)**. The parser file is untouched;
+  only NOTES.md and README.md were edited in this session.
+
+## Final validation, retry finish session 2 (2026-11-16 16:47 WIB)
+
+- `node diff.mjs 0` re-run in this retry session against the restored
+  git HEAD `repo/parse.js` (commit 8b9689c, 1359 lines): **720/720 pass,
+  0 fail, 973 ms wall (1.352 ms/case)**. The parser file is untouched;
+  only NOTES.md and README.md were edited in this session.
